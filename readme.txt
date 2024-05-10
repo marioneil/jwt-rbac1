@@ -13,6 +13,12 @@ DONE  . Create user detail service -> tells spring sec how to deal with uer obje
 
 April 17 - WebSecurityConfig.java -> implement this class completely.
 
+May 1
+WebSecurityConfig.java
+                //TODO  cREATE JWTfILTER - read token and auth the username
+            //TODO - Handle Security Exceptions.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  how to debug  AppUserDetails
          List<GrantedAuthority> authorities = user.getRoles().stream()
                  .map(role -> new SimpleGrantedAuthority(role.getName().name())).collect(Collectors.toList());
@@ -32,3 +38,8 @@ Secret is passed to client.
 save one rest call.
 
 h2 DATABASE - AppUserRepo
+
+Shortcuts
+
+Back - Ctrl + Alt <
+Fworward Ctrl + Alt >

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/controller")
+@RequestMapping("/api/v1/user/controller")
 public class UserOperationsController {
 
 	@GetMapping("/all")
