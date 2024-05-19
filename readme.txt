@@ -53,4 +53,4 @@ Fworward Ctrl + Alt >
 >>>>>>>>>>>>>>>>>>>>>
 
 git token auth for jetbtrains
-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
+
