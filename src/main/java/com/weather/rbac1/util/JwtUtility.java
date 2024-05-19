@@ -6,11 +6,13 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
 
 @Slf4j
+@Component
 public class JwtUtility {
 
     private String jwtSecret = "ao8xk88dh9nb5yao03wg1dnj1zdr9broel8jqp8447etjy5zjjaq2nyfj2el1v5f";

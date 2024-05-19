@@ -15,8 +15,14 @@ April 17 - WebSecurityConfig.java -> implement this class completely.
 
 May 1
 WebSecurityConfig.java
-                //TODO  cREATE JWTfILTER - read token and auth the username
-            //TODO - Handle Security Exceptions.
+DONE                //TODO  cREATE JWTfILTER - read token and auth the username
+DONE            //TODO - Handle Security Exceptions.
+
+May 9
+Resolve startup issues.
+Plug ExceptionHandling
+Add Filter in security chain.
+
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  how to debug  AppUserDetails
@@ -43,3 +49,8 @@ Shortcuts
 
 Back - Ctrl + Alt <
 Fworward Ctrl + Alt >
+
+>>>>>>>>>>>>>>>>>>>>>
+
+git token auth for jetbtrains
+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

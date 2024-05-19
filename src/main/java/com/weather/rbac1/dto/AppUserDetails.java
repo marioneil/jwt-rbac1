@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
+//@Component
 public class AppUserDetails implements UserDetails {
 
     private Long id;
@@ -80,4 +80,12 @@ public class AppUserDetails implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
 }
