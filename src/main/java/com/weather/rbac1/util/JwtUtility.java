@@ -1,6 +1,6 @@
 package com.weather.rbac1.util;
 
-import com.weather.rbac1.dto.SpringSecurityUser;
+import com.weather.rbac1.dto.AppUserDetails;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -21,7 +21,7 @@ public class JwtUtility {
 
 
     public String generateToken(Authentication authentication){
-        SpringSecurityUser userPrincipal = (SpringSecurityUser) authentication.getPrincipal();
+        AppUserDetails userPrincipal = (AppUserDetails) authentication.getPrincipal();
 
         String token = Jwts.builder().setSubject((userPrincipal.getUsername())).setIssuedAt(new Date())
                 .setExpiration(new Date((new Date()).getTime() + jwtExpirationMs))
