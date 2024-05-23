@@ -16,7 +16,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/prof")
-    @PreAuthorize("hasRole('PROF')")
+  //  @PreAuthorize("hasRole('PROF')")
     public String getProfData(){
         return "Prof DATA";
     }

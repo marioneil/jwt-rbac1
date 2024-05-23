@@ -58,7 +58,9 @@ public class WebSecurityConfig {
         httpSecurity.csrf(csrf->csrf.disable())
                 .exceptionHandling(e->e.authenticationEntryPoint(authEntry))
                 .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(auth->auth.requestMatchers("/api/auth/**").permitAll()
+                .authorizeHttpRequests(
+                        auth->auth.requestMatchers("/api/auth/**").permitAll()
+                           //     .requestMatchers("/api/v1/user/controller/**").permitAll()
                         .requestMatchers("/api/v1/department/**").permitAll().anyRequest().authenticated()
                 );
         //TODO   .requestMatchers("/api/v1/user/controller").permitAll().anyRequest().authenticated()
@@ -68,5 +70,13 @@ public class WebSecurityConfig {
         return httpSecurity.build();
 
     }
+
+//    @Bean
+//    public FilterRegistrationBean<AuthFilter> jwtFilter() {
+//        FilterRegistrationBean<AuthFilter> filter = new FilterRegistrationBean<AuthFilter>();
+//        filter.setFilter(getAuthFilter());
+//        filter.addUrlPatterns("/api/v1/department/**");
+//        return filter;
+//    }
 
 }
